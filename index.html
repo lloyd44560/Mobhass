@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/1.png" style="width:100%">
+  <img class="mySlides" src="img_lights.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+  <img class="mySlides" src="img_forest.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Mobile Based Home Automation and Security System</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+
+   <body>
+      <nav>
+         <div class="logo">
+            <img src="images/iot-logo.jpg" style="width: 100%; ">
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Screenshots">Screenshots</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#about">About Us</a></li>
+         </ul>
+      </nav>
+
+
+    
+      <section id="hero">
+        <div class="container">
+      
+        <div class="info">
+          <h1> MOBHASS</h1>
+          <h2> Mobile Based Home Automation and Security System</h2>
+      
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas officia at molestias corrupti placeat rem dolor dolorum optio, hic vero sit corporis sed. Nobis totam quibusdam iusto labore neque iste.</p>
+          <a href="#"> Features </a> <a href="#"> Download </a>
+        </div>
+       
+        </div>
+      </section>
+
+      
+      <style>
+        .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: normal;
+  align-content: normal;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+      </style>
+ 
+
+<!--Slider-->
+
+
+
+
+<style>
+#slider {
+  position: relative;
+  width: 500px;
+  height: 265px;
+
+ 
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+#slider ul li img{
+  width: 500px;
+  height: 265px;
+}
+ 
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+  </style>
+</head>
+<body>
+ 
+
+  <div class="kards">
+    <div class="gallery">
+      
+
+
+
+      <div class="content">
+        <img src="shoes.png">
+        <h3>COMPLETE CONTROL</h3>
+        <p>You can get instant response and status of any or all of your IoT devices, a power outlet, and CCTV by an app. It allows you to control your IoT devices with ease.</p>
+ 
+        
+ 
+      </div>
+      <div class="content">
+        <img src="earphone.png">
+        <h3>GET NOTIFICATIONS</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        
+       
+        
+      </div>
+      <div class="content">
+        <img src="watch.png">
+        <h3>CAMERA MONITORING</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+        
+  
+      </div>
+    </div>
+    </div>
+
+
+<section id="Features" style="
+
+margin-top:40px; margin-bottom:40px;">
+ <div class="feature-list" >
+  <h1 style="text-align: center; font-size: 35px;"> Features </h1>
+
+<!-- First Column-->
+
+    <div class="columns" style="letter-spacing: .1rem; text-align: center; justify-self: center; text-align: justify;
+    text-justify: inter-word;
+   
+  ">
+      <div class="column">
+        <div class="row">
+          <img src="images/home.png"> 
+          <h3>COMPLETE CONTROL</h3>
+          <div>You can get instant response and status of any or all of your IoT devices, a power outlet, and CCTV by an app. It allows you to control your IoT devices with ease.</div>
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="row">
+          <img src="images/notif.png"> 
+          <h3>GET NOTIFICATIONS</h3>
+
+          <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+       </div>
+        </div>
+  
+     </div>
+  
+      <div class="column">
+       <div class="row" style=" ">
+        <img src="images/cctv.png"> 
+        <h3>CAMERA MONITORING</h3>
+       <div>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+       </div>
+     </div>
+      </div>
+
+      
+    </div>
+   </div> 
+  
+
+   <!-- Second Column -->
+
+
+
+   
+   <div class="columns" style=" text-align: center; justify-self: center; letter-spacing: .1rem; text-align: center; justify-self: center; text-align: justify;
+   text-justify: inter-word;">
+    <div class="column">
+      <div class="row">
+        <img src="images/face_recog.png"> 
+        <h3>FACE RECOGNITION</h3>
+        <div>The CCTV has the ability to recognize known and unknown faces of a person in real-time. Using the mobile application, you can view the name of the person that is being detected by the camera and review the unknown faces captured by the camera.</div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="row">
+        <img src="images/multi.png"> 
+        <h3>MULTIPLE-USER</h3>
+
+        <div>You can access rooms, notifications, CCTV, and have control of IoT devices using mobile apps by more than one person simultaneously. 
+     </div>
+      </div>
+
+   </div>
+
+    <div class="column">
+     <div class="row">
+      <img src="images/schedule.png"> 
+      <h3>SCHEDULER</h3>
+     <div>You can perform automated tasks by setting a schedule for your particular IoT Devices to turn on or off.
+     </div>
+   </div>
+    </div>
+
+    
+  </div>
+ </div> 
+ 
+</section>  
+
+
+
+
+
+ 
+<!-- Choose MOBHASS-->
+
+<h1 style="text-align: center;">Here are some of the products available with MOBHASS</h1>
+<div class="wrapper">
+
+  <div class="center-line">
+  
+    <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+  </div>
+
+
+  <div class="row row-1">
+    <section>
+      <i class="icon fas fa-home"></i>
+      <div class="details">
+        <span class="title">
+          DOOR (RFID TECHNOLOGY)</span>
+
+      </div>
+      <img src="images/feature-1.png">
+      <p>We are removing the traditional way of accessing your door using an RFID (Radio-frequency identification) door locking system that offers more security and convenience to your home. MOBHASS featured a fixed RFID reader, which is commonly mounted on walls and is attached to a given location. To unlock and open the door, the household member simply taps his or her registered key card into the RFID reader.
+
+        Radio Frequency Identification (RFID) is the non-contact wireless transmission of data using radiofrequency waves. In an RFID door lock access control system, each household member's credential (typically a keycard or fob with an RFID chip) contains unique identifying information called a tag.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+
+      </div>
+    </section>
+  </div>
+  
+  <div class="row row-2">
+    <section>
+      <i class="icon fas fa-globe"></i>
+      <div class="details">
+        <span class="title">INTERNET OF THINGS (IoT) DEVICES or MICRO-CONTROLLER DEVICES</span>
+
+      </div>
+      <img src="images/feature-2.png">
+      <p>The micro-controller device allows household members to control electronic devices via an app using WiFi connectivity, and we have included a manual button to turn on and off the switches. Turning on or off your devices like light bulbs (auto volts) and fans (220 - 240 volts), within your app is an effortless and quick way of regulating their state.
+
+        The window lock system can keep your home more protected by providing the homeowner access to control and manage the status of a window by closing and opening through an app. A servomotor is linked to the nodeMCU, which is capable of connecting items and transferring data via the Wi-Fi protocol.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+      
+      </div>
+    </section>
+  </div>
+  
+  <div class="row row-1">
+    <section>
+      <i class="icon fas fa-rocket"></i>
+      <div class="details">
+        <span class="title">POWER OUTLET</span>
+     
+  
+      </div>
+      <img src="images/feature-3.png">
+      <p>The power outlet allows members of the household to control and track these devices remotely using their smartphones. This may be used to plug in other electronic devices, such as appliances that we use on a daily basis. This type of outlet, such as Parallel, parallel with grounding, universal, two-way outlet, and two-way with grounding, are suits different types of houses</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+  
+      </div>
+    </section>
+  </div>
+  
+  <div class="row row-2">
+    <section>
+      <i class="icon fas fa-globe"></i>
+      <div class="details">
+        <span class="title">GAS or SMOKE SENSOR</span>
+      
+      </div>
+      <img src="images/feature-4.png">
+      <p>
+        GAS or SMOKE SENSOR
+        These gas or smoke detectors and alarms are critical life-saving devices that must remain operational in case of a fire. When the alarms sense or become triggered due to the density of smoke and gasses, it will send SMS notifications to the homeowner and the nearest authority.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+
+      </div>
+    </section>
+  </div>
+  
+  <div class="row row-1">
+    <section>
+      <i class="icon fas fa-paper-plane"></i>
+      <div class="details">
+        <span class="title">CCTV (IP CAM)</span>
+
+      </div>
+      <p>MOBHASS used a smart CCTV (closed-circuit television) camera called IP Cam. The important benefit of this camera is that it can stream within a significant distance of your home. It continuously records or obtains footage of the scope of events by the camera, which is stored on an SD Card.
+
+        Aside from security surveillance, MOBHASS integrated it with facial recognition and it will send a notification to the application, which helps identify the intruder or unauthorized personnel. Household membersâ€™ may review recent recordings and captured faces, including the name, in the data acquired and preserved in storage.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+
+      </div>
+    </section>
+  </div>
+  
+  </div>
+</div>
+
+
+<!-- END OF Choose MOBHASS-->
+
+<div class="download" id="download">
+    <section id="hero" >
+
+
+
+
+    <section id="Download " style="background: linear-gradient(rgba(1,1,0,0.5), rgba(0,0,0,0.342)),url('images/iot.png')no-repeat center bottom/cover; background-color:#97b2de;
+    ">  
+
+      <div class="container" style="padding-bottom: 50px;" >
+      
+        <div class="info">
+          <br>
+          <h1>How to download the app?</h1>
+          <h2> We have two options for you</h2>
+      
+          <p> MOBHASS is available for both android and iphone devices. Click the link below to download our app. Smart home is the future of homes</p>
+          <a href="#" style="width: 150px; height: 40px; background: url('images/store.png')no-repeat center bottom/cover; ">   </a> <a href="#" style=" width: 150px; height: 40px;background: url('images/play.png')no-repeat center bottom/cover;">  </a>
+</div>
+        </div>
+        </div>
+    </section>
+  </div>
+
+
+<!-- Footer-->
+
+<footer>
+  <div class="main-content" id="about">
+    <div class="left box">
+      <h2>About us</h2>
+      <div class="content">
+        <p>MOBHASS is an IoT Based Home Security System where users may remotely monitor and control virtually the IoT devices in their houses, which can help them avoid home-related incidents. Smart houses technologies significantly collect and analyze real-time data to improve home energy efficiency and sustainability as well as residents' security, comfort, and safety.</p>
+        <br>
+        <p>MOBHASS is a group of students founded concurrently in 2021 for their Capstones 1 and 2. The team considers that we are in an era where almost everything can be controlled with a single click or touch. The group aims to design an Internet of Things-based home security system that can be managed and monitored using our smartphones.</p>
+        <div class="social">
+          <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+          <a href="#"><span class="fab fa-twitter"></span></a>
+          <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+          <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+        <div class="place">
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="text"> Novaliches, Quezon City </span>
+        </div>
+        <div class="phone">
+          <span class="fas fa-phone-alt"></span>
+          <span class="text">+089-765432100</span>
+        </div>
+        <div class="email">
+          <span class="fas fa-envelope"></span>
+          <span class="text">mobile_app_@example.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="right box">
+      <h2>Contact us</h2>
+      <div class="content">
+        <form action="#">
+          <div class="email">
+            <div class="text">Email *</div>
+            <input type="email" required>
+          </div>
+          <div class="msg">
+            <div class="text">Message *</div>
+            <textarea rows="2" cols="25" required></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bottom">
+    <center>
+      <span class="credit">Created By <a href="">MOBHASS Team</a> | </span>
+      <span class="far fa-copyright"></span><span>2021-2022.</span>
+    </center>
+  </div>
+<script src="script.js"></script>
+</footer>
+
+ 
+
+<div class="kard">
+<div class="gallery">
+  <div class="content">
+    <img src="shoes.png">
+    <h3>Shoes</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h6>$100.00</h6>
+    <ul>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+    </ul>
+    <button class="buy-1">Buy Now</button>
+  </div>
+  <div class="content">
+    <img src="earphone.png">
+    <h3>Earphone</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h6>$40.00</h6>
+    <ul>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+    </ul>
+    <button class="buy-2">Buy Now</button>
+  </div>
+  <div class="content">
+    <img src="watch.png">
+    <h3>Watch</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h6>$70.84</h6>
+    <ul>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+    </ul>
+    <button class="buy-3">Buy Now</button>
+  </div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+<style type="text/css">
+	
+
+
+  .parent {
+  height: 200px;
+  background: #CCCCCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .child {
+  background-color: #FFFF00;
+  width: 100px;
+  height: 100px;
+  }
+  </style>
+  
+
+
+
+</body>
+</html>
+  </div>
+  </div>
