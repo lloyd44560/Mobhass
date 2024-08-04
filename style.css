@@ -11,117 +11,85 @@ body{
   min-height: 100vh;
 }
 
-.section-main{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background: url(bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 100px;
-}
-
-.section-main h1{
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 60px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 80px;
-}
-
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 header .brand {
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #333;
   text-decoration: none;
-  color: #fff;
 }
 
 header .menu {
   display: flex;
-  gap: 15px;
+  align-items: center;
 }
 
 header .menu a {
-  color: #fff;
+  margin-left: 20px;
+  color: #333;
   text-decoration: none;
-  padding: 10px;
+  font-size: 1rem;
 }
 
 header .btn {
   display: none;
 }
 
-
-.section-two{
-  min-height: 100vh;
-  background: #001018;
-  padding: 20px 100px;
-}
-
-.section-two h2{
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 30px 0;
-}
-
-.section-two p{
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 18px;
-  margin: 30px 0;
-}
-
-@media (max-width: 1060px){
-  header .btn{
-    display: block;
+@media (max-width: 400px) {
+  header {
+    padding: 10px;
   }
 
-  header .menu{
+  header .brand {
+    font-size: 1.5rem;
+  }
+
+  header .menu {
     position: fixed;
-    background: #1483D5;
-    flex-direction: column;
-    min-width: 400px;
+    top: 0;
+    left: -100%;
+    width: 100%;
     height: 100vh;
-    top: 0;
-    right: -100%;
-    padding: 80px 50px;
-    transition: 0.5s;
-    transition-property: right;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease;
   }
 
-  header .menu.active{
-    right: 0;
+  header .menu a {
+    margin: 10px 0;
+    font-size: 1.2rem;
   }
 
-  header .menu .close-btn{
-    position: absolute;
-    top: 0;
+  header .menu.active {
     left: 0;
-    margin: 25px;
   }
 
-  header .menu a{
+  header .btn {
     display: block;
-    font-size: 20px;
-    margin: 20px;
-    padding: 0 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  header .menu-btn {
+    font-size: 1.5rem;
+  }
+
+  header .close-btn {
+    font-size: 2rem;
   }
 }
 
